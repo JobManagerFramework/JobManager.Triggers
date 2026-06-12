@@ -15,6 +15,7 @@ namespace ToolWheel;
 /// </summary>
 public class JobManagerTriggerModule : IJobManagerModulDescription
 {
+    /// <inheritdoc/>
     public string ModuleName { get => "ToolWheel.Extensions.JobManager.Triggers.Abstractions"; }
 
     /// <inheritdoc/>

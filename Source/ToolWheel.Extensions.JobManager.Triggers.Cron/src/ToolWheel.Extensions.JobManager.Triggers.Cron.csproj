@@ -1,6 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<!-- Generelle Projekt Konfiguration -->
-	<PropertyGroup />
+	<PropertyGroup>
+	  <Configurations>Debug;Release;Debug-WithoutWorkspace</Configurations>
+	</PropertyGroup>
 	<PropertyGroup>
 		<IsPackable>true</IsPackable>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>

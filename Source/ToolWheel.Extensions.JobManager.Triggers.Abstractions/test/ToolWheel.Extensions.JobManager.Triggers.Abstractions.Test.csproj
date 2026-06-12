@@ -5,6 +5,7 @@
 		<IsPackable>false</IsPackable>
 		<IsTestProject>true</IsTestProject>
 		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+		<Configurations>Debug;Release;Debug-WithoutWorkspace</Configurations>
 	</PropertyGroup>
 
 	<ItemGroup>

@@ -1,6 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<!-- Generelle Projekt Konfiguration -->
-	<PropertyGroup />
+	<PropertyGroup>
+		<Configurations>Debug;Release;Debug-WithoutWorkspace</Configurations>
+	</PropertyGroup>
 	<PropertyGroup>
 		<IsPackable>true</IsPackable>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -16,6 +18,6 @@
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(UseProjectReferences)' != 'true'">
-		<PackageReference Include="ToolWheel.Extensions.JobManager.Abstractions" Version="[1.0.0,2.0.0)" />
+		<PackageReference Include="ToolWheel.Extensions.JobManager.Abstractions" Version="[1.0.1,2.0.0)" />
 	</ItemGroup>
 </Project>

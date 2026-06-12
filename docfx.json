@@ -1,0 +1,31 @@
+{
+  "metadata": [
+    {
+      "src": [
+        { 
+          "files": [ "Source/**/*.csproj" ], 
+          "exclude": [ "**/bin/**", "**/obj/**", "**/*.Test.csproj" ],
+          "cwd": "." 
+        }
+      ],
+      "dest": "docs/api",
+      "disableGitFeatures": false
+    }
+  ],
+  "build": {
+    "content": [
+      { "files": [ "docs/api/**.yml", "docs/api/index.md" ] },
+      { "files": [ "docs/articles/**.md", "docs/toc.yml", "README.md" ], "cwd": "." }
+    ],
+    "resource": [
+      { "files": [ "images/**" ] }
+    ],
+    "dest": "docs/site",
+    "template": [ "default", "modern" ],
+    "globalMetadata": {
+      "_appTitle": "JobManager Trigger API",
+      "_appFooter": "ToolWheel JobManager Project",
+      "_enableSearch": true
+    }
+  }
+}

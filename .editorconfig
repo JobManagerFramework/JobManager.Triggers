@@ -1,0 +1,46 @@
+root = true
+
+[*.{cs,vb}]
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+[*.cs]
+# Using System directives first
+dotnet_sort_system_directives_first = true
+
+# File-scoped namespaces are used in the repository
+csharp_style_namespace_declarations = file_scoped:suggestion
+
+# Prefer 'var' instead of explicit types, but do NOT simplify obvious object creations (e.g. new List<T>())
+# Keep built-in types inferred and allow var elsewhere, but disable when the type is apparent on the right-hand side.
+csharp_style_var_for_built_in_types = true:suggestion
+csharp_style_var_when_type_is_apparent = false:suggestion
+csharp_style_var_elsewhere = true:suggestion
+
+# Prefer braces for clarity	
+csharp_prefer_braces = true:suggestion
+
+# Expression-bodied members are not preferred for methods in this codebase
+csharp_style_expression_bodied_methods = false:suggestion
+csharp_style_expression_bodied_properties = false:suggestion
+csharp_style_expression_bodied_operators = false:suggestion		
+csharp_style_expression_bodied_constructors = false:suggestion
+
+# Open-brace style: put open brace on a new line (matches file-scoped usage and type/method braces)
+csharp_new_line_before_open_brace = all
+
+# Qualification preferences
+dotnet_style_qualification_for_field = false:suggestion
+dotnet_style_qualification_for_property = false:suggestion
+dotnet_style_qualification_for_method = false:suggestion
+
+# Encoding and file header
+# (Project-wide nullable reference types appear enabled in sources; keep project setting in csproj)
+
+[*.{cs,csx}]
+# Treat analyzer suggestions as suggestions by default
+dotnet_analyzer_diagnostic.severity = silent

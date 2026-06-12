@@ -1,0 +1,39 @@
+<Project>
+	<!-- Importiere die Root Directory.Build.props, falls sie existiert (z.B. beim Laden über Workspace-Solution) -->
+	<Import Project="$(MSBuildThisFileDirectory)..\..\Directory.Build.props" Condition="Exists('$(MSBuildThisFileDirectory)..\..\Directory.Build.props')" />
+
+	<!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+	<PropertyGroup>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+		<RootNamespace>ToolWheel</RootNamespace>
+		<Nullable>enable</Nullable>
+		<LangVersion>default</LangVersion>
+
+		<!-- XML-Dokumentation für alle Projekte aktivieren -->
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<!-- NuGet-Paket-Metadaten -->
+	<PropertyGroup>
+		<Authors>ToolWheelDE</Authors>
+		<Company>ToolWheelDE</Company>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/ToolWheelDE/JobManager</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/ToolWheelDE/JobManager</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>jobmanager;scheduler;background;tasks;dotnet</PackageTags>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<!-- IncludeSymbols + snupkg für Debuggability auf NuGet.org -->
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>
+
+	<!-- Versionierung via MinVer (Git-Tags: v1.2.3 oder 1.2.3) -->
+	<PropertyGroup>
+		<MinVerDefaultPreReleaseIdentifiers>preview.0</MinVerDefaultPreReleaseIdentifiers>
+		<MinVerTagPrefix>v</MinVerTagPrefix>
+	</PropertyGroup>
+</Project>

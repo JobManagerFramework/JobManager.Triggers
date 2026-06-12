@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<!-- Generelle Projekt Konfiguration -->
+	<PropertyGroup />
+	<PropertyGroup>
+		<IsPackable>true</IsPackable>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>ToolWheel.Extensions.JobManager.Triggers.Cron</PackageId>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="Cronos" Version="0.13.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\ToolWheel.Extensions.JobManager.Triggers.Abstractions\src\ToolWheel.Extensions.JobManager.Triggers.Abstractions.csproj" />
+	</ItemGroup>
+</Project>

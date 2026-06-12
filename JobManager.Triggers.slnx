@@ -1,0 +1,24 @@
+<Solution>
+  <Folder Name="/Source/" />
+  <Folder Name="/Source/ToolWheel.Extensions.JobManager.Triggers.Abstractions/" />
+  <Folder Name="/Source/ToolWheel.Extensions.JobManager.Triggers.Abstractions/src/">
+    <Project Path="Source/ToolWheel.Extensions.JobManager.Triggers.Abstractions/src/ToolWheel.Extensions.JobManager.Triggers.Abstractions.csproj" />
+  </Folder>
+  <Folder Name="/Source/ToolWheel.Extensions.JobManager.Triggers.Abstractions/test/">
+    <Project Path="Source/ToolWheel.Extensions.JobManager.Triggers.Abstractions/test/ToolWheel.Extensions.JobManager.Triggers.Abstractions.Test.csproj" />
+  </Folder>
+  <Folder Name="/Source/ToolWheel.Extensions.JobManager.Triggers.Cron/" />
+  <Folder Name="/Source/ToolWheel.Extensions.JobManager.Triggers.Cron/src/">
+    <Project Path="Source/ToolWheel.Extensions.JobManager.Triggers.Cron/src/ToolWheel.Extensions.JobManager.Triggers.Cron.csproj" />
+  </Folder>
+  <Folder Name="/Source/ToolWheel.Extensions.JobManager.Triggers.Cron/test/">
+    <Project Path="Source/ToolWheel.Extensions.JobManager.Triggers.Cron/test/ToolWheel.Extensions.JobManager.Triggers.Cron.Test.csproj" />
+  </Folder>
+  <Folder Name="/Source/ToolWheel.Extensions.JobManager.Triggers/" />
+  <Folder Name="/Source/ToolWheel.Extensions.JobManager.Triggers/src/">
+    <Project Path="Source/ToolWheel.Extensions.JobManager.Triggers/src/ToolWheel.Extensions.JobManager.Triggers.csproj" />
+  </Folder>
+  <Folder Name="/Source/ToolWheel.Extensions.JobManager.Triggers/test/">
+    <Project Path="Source/ToolWheel.Extensions.JobManager.Triggers/test/ToolWheel.Extensions.JobManager.Triggers.Test.csproj" />
+  </Folder>
+</Solution>
